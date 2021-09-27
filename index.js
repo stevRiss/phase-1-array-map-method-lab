@@ -11,6 +11,44 @@ const tutorials = [
   'what is JSONP?'
 ];
 
+//GOALS
+
 const titleCased = () => {
-  return tutorials
+
+
+
+debugger
+  return tutorials.map(item => {
+    debugger
+    const updSent = [];
+    const upperFast = item.split(' ');
+    
+    for(let string of upperFast){
+      debugger
+      //onst newSent =  [];
+      debugger
+      const word = string.charAt(0).toUpperCase() + string.slice(1);
+      debugger
+      
+      updSent.push(word);
+      //updSent.join(' ')
+
+    
+
+      //return word;
+      debugger
+    }
+
+    debugger
+    return updSent.join(' ');
+    //return updSent;
+  });
+  
 }
+console.log(titleCased());
+
+//.map() goal is to iterate over an array and apply a function to each element of array and then return value to a NEW array,
+//leaving the original array unchanged
+
+//function titleCased(tutorials)
+
